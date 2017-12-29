@@ -1,0 +1,25 @@
+{
+  "productTable": [
+    {
+      "id": 1,
+      "productName": "Tropicana",
+      "category": "Juice",
+      "price": 100,
+      "purchase": true
+    },
+    {
+      "id": 2,
+      "productName": "Real",
+      "category": "Juice",
+      "price": 95,
+      "purchase": true
+    },
+    {
+      "id": 3,
+      "productName": "Apple",
+      "category": "Fruit",
+      "price": 80,
+      "purchase": false
+    }
+  ]
+}
