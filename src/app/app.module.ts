@@ -7,6 +7,7 @@ import { HttpModule, Http, ConnectionBackend } from '@angular/http';
 import { AppComponent } from './app.component';
 import { ProductGridComponent } from './product-grid/product-grid.component';
 import { ProductTable } from './ProductTable';
+import { ChangePurchaseService } from './change-purchase.service';
 
 const routes: Routes = [
   { path: '', redirectTo: 'grid', pathMatch: 'full'},
@@ -25,7 +26,8 @@ const routes: Routes = [
     HttpModule
   ],
   providers: [
-    HttpModule
+    HttpModule,
+    ChangePurchaseService
   ],
   bootstrap: [AppComponent]
 })

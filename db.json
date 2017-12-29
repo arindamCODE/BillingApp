@@ -10,7 +10,7 @@
       "id": 2,
       "productName": "Real",
       "price": 95,
-      "purchase": true
+      "purchase": false
     },
     {
       "id": 3,
@@ -22,19 +22,19 @@
       "id": 4,
       "productName": "DairyMilk",
       "price": 90,
-      "purchase": false
+      "purchase": true
     },
     {
       "id": 5,
       "productName": "Burger",
       "price": 150,
-      "purchase": false
+      "purchase": true
     },
     {
       "id": 6,
       "productName": "Pizza",
       "price": 650,
-      "purchase": false
+      "purchase": true
     }
   ]
 }

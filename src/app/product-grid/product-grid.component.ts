@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductTable } from '../ProductTable';
 import { Http } from '@angular/http';
+import { ChangePurchaseService } from '../change-purchase.service';
 
 
 @Component({
@@ -14,7 +15,7 @@ export class ProductGridComponent implements OnInit {
 
   public product: ProductTable[];
 
-  constructor(private http: Http) {
+  constructor(private http: Http, private object: ChangePurchaseService) {
     this.url = 'http://localhost:3004/productTable';
     this.getDetails();
   }
@@ -30,9 +31,11 @@ export class ProductGridComponent implements OnInit {
 
   change(pro: ProductTable) {
     pro.purchase = false;
+    this.object.change(pro);
   }
 
   change1(pro: ProductTable) {
     pro.purchase = true;
+    this.object.change1(pro);
   }
 }
