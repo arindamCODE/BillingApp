@@ -1,18 +1,32 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import { HttpModule, Http, ConnectionBackend } from '@angular/http';
 
 
 import { AppComponent } from './app.component';
+import { ProductGridComponent } from './product-grid/product-grid.component';
+import { ProductTable } from './ProductTable';
+
+const routes: Routes = [
+  { path: '', redirectTo: 'grid', pathMatch: 'full'},
+  { path: 'grid', component: ProductGridComponent}
+];
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ProductGridComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot(routes),
+    HttpModule
   ],
-  providers: [],
+  providers: [
+    HttpModule
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
