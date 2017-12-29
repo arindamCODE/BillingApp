@@ -10,11 +10,12 @@ import { Http } from '@angular/http';
 })
 export class ProductGridComponent implements OnInit {
 
-  url: 'http://localhost:3004/productTable';
+  url: string;
 
   public product: ProductTable[];
 
   constructor(private http: Http) {
+    this.url = 'http://localhost:3004/productTable';
     this.getDetails();
   }
 
@@ -27,4 +28,11 @@ export class ProductGridComponent implements OnInit {
     }, error => console.error(error));
   }
 
+  change(pro: ProductTable) {
+    pro.purchase = false;
+  }
+
+  change1(pro: ProductTable) {
+    pro.purchase = true;
+  }
 }
