@@ -27,6 +27,11 @@ export class ProductGridComponent implements OnInit {
     this.http.get(this.url).subscribe(result => {
       this.product = result.json() as ProductTable[];
     }, error => console.error(error));
+    if (this.product != null) {
+      return false;
+    }else {
+      return true;
+    }
   }
 
   change(pro: ProductTable) {

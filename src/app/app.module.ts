@@ -27,7 +27,8 @@ const routes: Routes = [
   ],
   providers: [
     HttpModule,
-    ChangePurchaseService
+    ChangePurchaseService,
+    Http
   ],
   bootstrap: [AppComponent]
 })
