@@ -8,17 +8,20 @@ import { AppComponent } from './app.component';
 import { ProductGridComponent } from './product-grid/product-grid.component';
 import { ProductTable } from './ProductTable';
 import { ChangePurchaseService } from './change-purchase.service';
+import { InvoiceComponent } from './invoice/invoice.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'grid', pathMatch: 'full'},
-  { path: 'grid', component: ProductGridComponent}
+  { path: 'grid', component: ProductGridComponent},
+  { path: 'invoice'  ,component :InvoiceComponent}
 ];
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProductGridComponent
+    ProductGridComponent,
+    InvoiceComponent
   ],
   imports: [
     BrowserModule,

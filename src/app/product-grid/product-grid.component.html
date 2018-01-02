@@ -3,13 +3,15 @@
   <div class="col-sm-3" *ngFor="let pro of product">
     <div class="card">
       <div class="card-body">
+        
         <h5 class="card-title">{{pro.productName}}</h5>
         <p class="card-text">{{pro.price}}</p>
-        <a *ngIf="pro.purchase === true" class="btn btn-primary" (click)="change(pro)">Bought</a>
-        <a *ngIf="pro.purchase === false" class="btn btn-primary" (click)="change1(pro)">Buy</a>
+        <button *ngIf="pro.purchase === true" class="btn btn-success" (click)="change(pro)">Bought</button>
+        <button *ngIf="pro.purchase === false" class="btn btn-primary" (click)="change1(pro)">Buy</button>
       </div>
     </div>
   </div>
+  
   <!--<div class="col-sm-3">
     <div class="card">
       <div class="card-body">
@@ -37,5 +39,7 @@
       </div>
     </div>
   </div>-->
+  
 </div>
+<button routerLink ='/invoice' class="btn btn-primary" (click)="getDataByPurchase" id="submit">Submit</button>
 </div>
