@@ -1,6 +1,7 @@
 <div class="container">
-  <div class="row" >
-  <div class="col-sm-3" *ngFor="let pro of product">
+  <div class="row">
+    <div class="col-sm-3" *ngFor="let pro of product">
+      <!--<div class="col-sm-3" *ngFor="let pro of product">
     <div class="card">
       <div class="card-body">
         
@@ -10,9 +11,10 @@
         <button *ngIf="pro.purchase === false" class="btn btn-primary" (click)="change1(pro)">Buy</button>
       </div>
     </div>
-  </div>
-  
-  <!--<div class="col-sm-3">
+  </div>-->
+      <app-product-card [product]="pro" [purchaseStatus]="pro.purchase"></app-product-card>
+
+      <!--<div class="col-sm-3">
     <div class="card">
       <div class="card-body">
         <h5 class="card-title">Special title treatment</h5>
@@ -39,7 +41,8 @@
       </div>
     </div>
   </div>-->
-  
-</div>
-<button routerLink ='/invoice' class="btn btn-primary" (click)="getDataByPurchase" id="submit">Submit</button>
+    </div>
+  </div>
+
+  <button routerLink='/invoice' class="btn btn-primary" (click)="getDataByPurchase" id="submit">Submit</button>
 </div>

@@ -10,7 +10,7 @@
       "id": 2,
       "productName": "Real",
       "price": 95,
-      "purchase": true
+      "purchase": false
     },
     {
       "id": 3,
@@ -28,7 +28,7 @@
       "id": 5,
       "productName": "Burger",
       "price": 150,
-      "purchase": true
+      "purchase": false
     },
     {
       "id": 6,

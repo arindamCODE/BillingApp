@@ -3,17 +3,18 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HttpModule, Http, ConnectionBackend } from '@angular/http';
 
-
 import { AppComponent } from './app.component';
-import { ProductGridComponent } from './product-grid/product-grid.component';
+
 import { ProductTable } from './ProductTable';
 import { ChangePurchaseService } from './change-purchase.service';
-import { InvoiceComponent } from './invoice/invoice.component';
+import { InvoiceComponent } from './components/invoice/invoice.component';
+import { ProductGridComponent } from './components/product-grid/product-grid.component';
+import { ProductCardComponent } from './components/product-card/product-card.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'grid', pathMatch: 'full'},
-  { path: 'grid', component: ProductGridComponent},
-  { path: 'invoice'  ,component :InvoiceComponent}
+  { path: '', redirectTo: 'grid', pathMatch: 'full' },
+  { path: 'grid', component: ProductGridComponent },
+  { path: 'invoice', component: InvoiceComponent }
 ];
 
 
@@ -21,7 +22,8 @@ const routes: Routes = [
   declarations: [
     AppComponent,
     ProductGridComponent,
-    InvoiceComponent
+    InvoiceComponent,
+    ProductCardComponent
   ],
   imports: [
     BrowserModule,

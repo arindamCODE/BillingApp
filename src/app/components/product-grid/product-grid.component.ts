@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { ProductTable } from '../ProductTable';
+import { ProductTable } from '../../ProductTable';
 import { Http } from '@angular/http';
-import { ChangePurchaseService } from '../change-purchase.service';
+import { ChangePurchaseService } from '../../change-purchase.service';
 import { Router, ActivatedRoute } from '@angular/router';
 import { EventEmitter} from '@angular/core';
 
