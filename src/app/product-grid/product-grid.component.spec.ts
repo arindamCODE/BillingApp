@@ -1,7 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { ProductGridComponent } from './product-grid.component';
-import { HttpModule, Http, ConnectionBackend, RequestOptions } from '@angular/http';
+import { Http } from '@angular/http';
 
 
 fdescribe('ProductGridComponent', () => {
@@ -10,10 +9,10 @@ fdescribe('ProductGridComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ProductGridComponent ],
-       providers: [ HttpModule, Http , ConnectionBackend , RequestOptions ]
+      declarations: [ProductGridComponent],
+      providers: [{ provide: Http, useValue: }]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {
@@ -29,4 +28,5 @@ fdescribe('ProductGridComponent', () => {
   // it('should get the Product Details', () => {
   //   expect(component.getDetails).toBe(true);
   // });
+
 });
