@@ -4,7 +4,7 @@
       "id": 1,
       "productName": "Tropicana",
       "price": 100,
-      "purchase": false
+      "purchase": true
     },
     {
       "id": 2,
@@ -16,7 +16,7 @@
       "id": 3,
       "productName": "Apple",
       "price": 80,
-      "purchase": true
+      "purchase": false
     },
     {
       "id": 4,
@@ -28,7 +28,7 @@
       "id": 5,
       "productName": "Burger",
       "price": 150,
-      "purchase": false
+      "purchase": true
     },
     {
       "id": 6,
