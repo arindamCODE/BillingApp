@@ -1,0 +1,9 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-3" *ngFor="let pro of product">
+      <app-product-card [product]="pro" [purchaseStatus]="pro.purchase"></app-product-card>
+    </div>
+  </div>
+
+  <button routerLink='/invoice' class="btn btn-primary" (click)="getDataByPurchase" id="submit">Submit</button>
+</div>

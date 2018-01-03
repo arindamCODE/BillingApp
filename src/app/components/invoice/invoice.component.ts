@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Http } from '@angular/http';
 import { Router, ActivatedRoute } from '@angular/router';
-import { ProductTable } from '../ProductTable';
+import { ProductTable } from '../../ProductTable';
 import { ProductGridComponent } from '../product-grid/product-grid.component';
 import { environment } from '../../environments/environment.prod';
 
