@@ -1,16 +1,18 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { ProductGridComponent } from './product-grid.component';
+import { Http } from '@angular/http';
 
-describe('ProductGridComponent', () => {
+
+fdescribe('ProductGridComponent', () => {
   let component: ProductGridComponent;
   let fixture: ComponentFixture<ProductGridComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ProductGridComponent ]
+      declarations: [ProductGridComponent],
+      providers: [{ provide: Http, useValue: }]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {
@@ -22,4 +24,9 @@ describe('ProductGridComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  // it('should get the Product Details', () => {
+  //   expect(component.getDetails).toBe(true);
+  // });
+
 });
