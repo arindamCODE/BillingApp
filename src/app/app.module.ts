@@ -10,6 +10,7 @@ import { ChangePurchaseService } from './change-purchase.service';
 import { InvoiceComponent } from './components/invoice/invoice.component';
 import { ProductGridComponent } from './components/product-grid/product-grid.component';
 import { ProductCardComponent } from './components/product-card/product-card.component';
+import { ListComponent } from './components/list/list.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'grid', pathMatch: 'full' },
@@ -23,7 +24,8 @@ const routes: Routes = [
     AppComponent,
     ProductGridComponent,
     InvoiceComponent,
-    ProductCardComponent
+    ProductCardComponent,
+    ListComponent
   ],
   imports: [
     BrowserModule,
